@@ -22,13 +22,16 @@ and what you should write is the favNum function that makes the code above work,
     
 */
 
+var first = function(arr, cb) {
+   cb(arr[0]);
+};
 
 
   //Code Here for first
   
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 first(names, function(firstName){
-  console.log('The first name in names is ', firstName)
+  console.log('The first name in names is ' + firstName)
 });
 
 
@@ -37,12 +40,14 @@ first(names, function(firstName){
 
 
 
-
-  //Code Here for last
+var last = fucntion(arr, cb) {
+  cb(arr[array.length - 1]);
+};
+  //Code here for Last
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 last(names, function(lastName){
-  console.log('The last name in names is ', lastName);
+  console.log('The last name in names is ' + lastName);
 });
 
 
@@ -54,7 +59,9 @@ last(names, function(lastName){
 
 
 
-
+var multiply = function(x,y,cb){
+  cb(x * y);
+};
 
   //Code Here for multiply
 
@@ -73,6 +80,12 @@ multiply(4, 3, function(answer){
 
 
   //Code Here for contains
+
+var contains = function(arr, str, cb){
+  for (var i = 0; i < arr.length; i++);
+    
+
+}
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 contains(names, 'Colt', function(result){
